@@ -11,6 +11,12 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Video files
+*.mov
+*.MOV
+
+# Jekyll files
+Gemfile.lock
 _site/
 .sass-cache/
 .jekyll-cache/
