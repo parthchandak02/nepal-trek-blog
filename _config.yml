@@ -6,5 +6,7 @@ url: "https://parthchandak02.github.io"
 # Build settings
 markdown: kramdown
 theme: minima
+
+# Plugins
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
