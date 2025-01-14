@@ -19,4 +19,4 @@ This blog chronicles my experience traveling to Nepal with BuildOn, an internati
 - Markdown
 
 ## View the Blog
-This blog is hosted on GitHub Pages at: https://[your-username].github.io/nepal-trek-blog
+This blog is hosted on GitHub Pages at: https://parthchandak02.github.io/nepal-trek-blog
