@@ -13,10 +13,25 @@ This blog chronicles my experience traveling to Nepal with BuildOn, an internati
 - Personal reflections and lessons learned
 
 ## Technologies
-- HTML5
-- CSS3
-- JavaScript
-- Markdown
+- Jekyll static site generator
+- GitHub Pages
+- Markdown for content
+- HTML5/CSS3
+- Minima theme
+
+## Development
+
+This site is built with Jekyll. To run it locally:
+
+```bash
+# Install dependencies
+bundle install
+
+# Start the local server
+bundle exec jekyll serve
+```
+
+Visit `http://localhost:4000/nepal-trek-blog/` to see the site.
 
 ## View the Blog
 This blog is hosted on GitHub Pages at: https://parthchandak02.github.io/nepal-trek-blog
