@@ -1,0 +1,12 @@
+# Large media files
+*.psd
+*.ai
+*.mp4
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
