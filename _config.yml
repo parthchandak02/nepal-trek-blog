@@ -1,0 +1,10 @@
+title: Nepal Trek Blog
+description: A journey through Nepal with BuildOn
+baseurl: "/nepal-trek-blog"
+url: "https://parthchandak02.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
