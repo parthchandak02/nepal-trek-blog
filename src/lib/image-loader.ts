@@ -1,7 +1,10 @@
-export default function imageLoader({ src, width, quality }: { src: string; width?: number; quality?: number }) {
-  const prefix = process.env.NODE_ENV === 'production' ? '/nepal-trek-blog' : ''
-  if (src.startsWith('/')) {
-    return `${prefix}${src}`
+import { prefix } from './prefix'
+
+export default function imageLoader({ src }: { src: string }) {
+  // If the src already starts with the prefix, don't add it again
+  if (src.startsWith(prefix)) {
+    return src;
   }
-  return src
+  // Add the prefix to the src
+  return `${prefix}${src}`;
 }

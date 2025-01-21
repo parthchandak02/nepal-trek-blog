@@ -1,9 +1,12 @@
 import type { NextConfig } from 'next'
 
+const isProd = process.env.NODE_ENV === 'production'
+const prefix = isProd ? '/nepal-trek-blog' : ''
+
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/nepal-trek-blog' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/nepal-trek-blog' : '',
+  basePath: prefix,
+  assetPrefix: prefix,
   images: {
     unoptimized: true,
     loader: 'custom',
