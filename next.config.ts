@@ -1,17 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from 'next'
+
+const nextConfig: NextConfig = {
   output: 'export',
-  ...(process.env.NODE_ENV === 'production' ? {
-    basePath: '/nepal-trek-blog',
-  } : {}),
+  basePath: process.env.NODE_ENV === 'production' ? '/nepal-trek-blog' : '',
   images: {
     unoptimized: true,
-    ...(process.env.NODE_ENV === 'production' ? {
-      path: '/nepal-trek-blog',
-      loader: 'custom',
-      loaderFile: './src/lib/image-loader.ts'
-    } : {})
+    loader: 'custom',
+    loaderFile: './src/lib/image-loader.ts',
   },
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/nepal-trek-blog' : '',
 }
 
-module.exports = nextConfig
+export default nextConfig
