@@ -1,14 +1,13 @@
-import type { NextConfig } from 'next'
-
-const nextConfig: NextConfig = {
-  // Only enable these for production build
-  ...(process.env.NODE_ENV === 'production' ? {
-    output: 'export',  // Enable static exports
-    basePath: '/nepal-trek-blog', // Your repo name
-  } : {}),
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  basePath: '/nepal-trek-blog',
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
+    path: '/nepal-trek-blog',
+    loader: 'custom',
+    loaderFile: './src/lib/image-loader.ts'
   },
 }
 
-export default nextConfig
+module.exports = nextConfig
