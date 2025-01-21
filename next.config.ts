@@ -1,18 +1,16 @@
 import type { NextConfig } from 'next'
 
-const isProd = process.env.NODE_ENV === 'production'
-const prefix = isProd ? '/nepal-trek-blog' : ''
+const basePath = process.env.NODE_ENV === 'production' ? '/nepal-trek-blog' : ''
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: prefix,
-  assetPrefix: prefix,
+  basePath,
+  assetPrefix: basePath,
   images: {
     unoptimized: true,
     loader: 'custom',
     loaderFile: './src/lib/image-loader.ts',
   },
-  // Remove remotePatterns as we're handling paths in the loader
   // Ensure trailing slashes are handled consistently
   trailingSlash: true,
 }

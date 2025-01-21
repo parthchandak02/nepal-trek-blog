@@ -1,12 +1,13 @@
 import { prefix } from './prefix'
 
 export default function imageLoader({ src }: { src: string }) {
-  // Remove any leading slash
+  // Remove any leading slash and clean the path
   const cleanSrc = src.startsWith('/') ? src.slice(1) : src;
 
-  // In production (GitHub Pages), add the prefix
+  // Always add the prefix in production/GitHub Pages
   if (process.env.NODE_ENV === 'production') {
-    return `${prefix}/${cleanSrc}`;
+    // Ensure the path starts with the prefix
+    return `${prefix}/${cleanSrc}`.replace(/\/+/g, '/');
   }
 
   // In development, just use the clean path
