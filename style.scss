@@ -1,0 +1,44 @@
+// Center all images and their captions
+img, img[src$=".gif"], img[src$=".GIF"] {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 100%;
+  height: auto;
+}
+
+// Center image captions (which are in italics)
+em {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+// Tables are already centered by default in most Jekyll themes
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+// Remove table borders and padding for image tables
+table, tr, td {
+  border: none !important;
+  padding: 0 !important;
+  background: none !important;
+}
+
+// Ensure GIFs in tables are centered
+td img[src$=".gif"], td img[src$=".GIF"] {
+  display: block !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+
+// Center table cells content
+td {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
