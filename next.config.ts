@@ -11,14 +11,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
     loader: 'custom',
     loaderFile: './src/lib/image-loader.ts',
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'parthchandak02.github.io',
-        pathname: '/nepal-trek-blog/**',
-      },
-    ],
   },
+  // Remove remotePatterns as we're handling paths in the loader
   // Ensure trailing slashes are handled consistently
   trailingSlash: true,
 }
