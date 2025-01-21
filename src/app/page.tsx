@@ -6,8 +6,8 @@ export default function Home() {
     <div className="max-w-4xl mx-auto space-y-12 pb-20">
       {/* Hero Section */}
       <section className="text-center space-y-4 py-8">
-        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-          Building Schools, Building Hope
+        <h1 className="text-4xl font-bold text-center mb-4">
+          BuildOn Schoolhouse Sherpas - Trek (Basanta, Nepal)
         </h1>
         <p className="text-xl text-muted-foreground">
           A Nepal Trek Story
@@ -19,12 +19,17 @@ export default function Home() {
 
       {/* Introduction */}
       <section className="mb-12">
-        <BlogImage
-          src="/content/assets/images/parth-intro-1.jpg"
-          alt="Author with BuildOn team in Nepal"
-          caption="Embarking on a journey to build hope, one brick at a time"
-          className="w-[50%] mx-auto"
-        />
+        <div className="relative aspect-video">
+          <Image
+            src="/content/assets/images/parth-intro-1.jpg"
+            alt="Author with BuildOn team in Nepal"
+            fill
+            className="object-cover rounded-lg"
+          />
+        </div>
+        <p className="text-center text-sm text-muted-foreground italic mt-2">
+          A journey with the Basanta community, with the BuildOn team
+        </p>
       </section>
 
       {/* Blog Content */}
