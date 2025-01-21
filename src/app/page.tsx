@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BlogImage } from "@/components/blog-image";
 
 export default function Home() {
   return (
@@ -18,18 +19,12 @@ export default function Home() {
 
       {/* Introduction */}
       <section className="mb-12">
-        <div className="relative w-full h-auto">
-          <Image
-            src="/content/assets/images/parth-intro-1.jpg"
-            alt="Author with BuildOn team in Nepal"
-            width={1200}
-            height={675}
-            className="rounded-lg w-[50%] mx-auto"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
-          Embarking on a journey to build hope, one brick at a time
-        </p>
+        <BlogImage
+          src="/content/assets/images/parth-intro-1.jpg"
+          alt="Author with BuildOn team in Nepal"
+          caption="Embarking on a journey to build hope, one brick at a time"
+          className="w-[50%] mx-auto"
+        />
       </section>
 
       {/* Blog Content */}
@@ -48,18 +43,12 @@ export default function Home() {
           we needed, including hot water. We knew we were in good hands.
         </p>
 
-        <div className="relative w-full h-auto my-8">
-          <Image
-            src="/content/assets/images/plane-landing-nepal.png"
-            alt="Landing in Kathmandu"
-            width={1200}
-            height={675}
-            className="rounded-lg w-full"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
-          First glimpse of Nepal as our plane descended into Kathmandu
-        </p>
+        <BlogImage
+          src="/content/assets/images/plane-landing-nepal.png"
+          alt="Landing in Kathmandu"
+          caption="First glimpse of Nepal as our plane descended into Kathmandu"
+          className="w-full"
+        />
 
         <h2>Day 2: First Steps in Nepal</h2>
         <p>
@@ -68,25 +57,19 @@ export default function Home() {
           Their joy was catching, and soon we were all smiling.
         </p>
 
-        <div className="grid grid-cols-2 gap-4 my-8">
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/welcome-garlands-1.gif"
-              alt="Children welcoming us with garlands"
-              fill
-              unoptimized
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/welcome-garlands-2.gif"
-              alt="More welcome ceremonies"
-              fill
-              unoptimized
-              className="object-cover rounded-lg"
-            />
-          </div>
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <BlogImage
+            src="/content/assets/images/welcome-garlands-1.gif"
+            alt="Children welcoming us with garlands"
+            unoptimized
+            fill
+          />
+          <BlogImage
+            src="/content/assets/images/welcome-garlands-2.gif"
+            alt="More welcome ceremonies"
+            unoptimized
+            fill
+          />
         </div>
         <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           School children sharing their culture through dance and song
@@ -107,19 +90,13 @@ export default function Home() {
           education but also cultural pride and creativity.
         </p>
 
-        <div className="relative w-full h-auto my-8">
-          <Image
-            src="/content/assets/images/children-performance.gif"
-            alt="Children performing traditional dances"
-            width={1200}
-            height={675}
-            unoptimized
-            className="rounded-lg w-[50%] mx-auto"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
-          School children sharing their culture through dance and song
-        </p>
+        <BlogImage
+          src="/content/assets/images/children-performance.gif"
+          alt="Children performing traditional dances"
+          caption="School children sharing their culture through dance and song"
+          className="w-[50%] mx-auto"
+          unoptimized
+        />
 
         <p>
           Later that night, we were introduced to the dedicated BuildOn management team, including Trek Coordinator
@@ -141,77 +118,54 @@ export default function Home() {
           meeting my host father, Mr. Tulasiram Tharu.
         </p>
 
-        <div className="space-y-8 my-8">
-          <div className="relative aspect-video">
-            <Image
-              src="/content/assets/images/welcome-dance.gif"
-              alt="Traditional dance performance"
-              fill
-              unoptimized
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/content/assets/images/welcome-dance-2.jpg"
-              alt="Village celebration"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
+        <div className="space-y-8 mb-8">
+          <BlogImage
+            src="/content/assets/images/welcome-dance.gif"
+            alt="Traditional dance performance"
+            fill
+            unoptimized
+          />
+          <BlogImage
+            src="/content/assets/images/welcome-dance-2.jpg"
+            alt="Village celebration"
+            fill
+          />
         </div>
         <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           The community coming together to welcome us with traditional dances
         </p>
 
-        <div className="relative aspect-video my-8">
-          <Image
-            src="/content/assets/images/covenant-signing.jpg"
-            alt="Covenant signing ceremony"
+        <BlogImage
+          src="/content/assets/images/covenant-signing.jpg"
+          alt="Covenant signing ceremony"
+          caption="Signing the covenant - a symbol of our shared commitment to education and community development"
+          fill
+        />
+
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <BlogImage
+            src="/content/assets/images/pooja-ceremony.gif"
+            alt="Commencement pooja ceremony"
             fill
-            className="object-cover rounded-lg"
+            unoptimized
           />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          Signing the covenant - a symbol of our shared commitment to education and community development
-        </p>
-
-        <div className="grid grid-cols-2 gap-4 my-8">
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/pooja-ceremony.gif"
-              alt="Commencement pooja ceremony"
-              fill
-              unoptimized
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/team-dig-begin.gif"
-              alt="Team starting the foundation"
-              fill
-              unoptimized
-              className="object-cover rounded-lg"
-            />
-          </div>
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          Beginning our journey with traditional blessings and groundbreaking
-        </p>
-
-        <div className="relative w-full h-auto my-8">
-          <Image
-            src="/content/assets/images/host-father-1.jpg"
-            alt="Meeting my host father"
-            width={1200}
-            height={675}
-            className="rounded-lg w-full"
+          <BlogImage
+            src="/content/assets/images/team-dig-begin.gif"
+            alt="Team starting the foundation"
+            fill
+            unoptimized
           />
         </div>
         <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
-          First moments with my host father, Mr. Tulasiram Tharu
+          Beginning our journey with traditional blessings and groundbreaking
         </p>
+
+        <BlogImage
+          src="/content/assets/images/host-father-1.jpg"
+          alt="Meeting my host father"
+          caption="First moments with my host father, Mr. Tulasiram Tharu"
+          className="w-full"
+        />
 
         <p>
           Mr. Tharu's hospitality began immediately as he loaded our bags onto his bicycle. At his home, I met his warm family - his daughter-in-law who managed the household with grace, and his cheerful grandson Prince who quickly became my little friend. During our walk to his farms, Mr. Tharu shared that his son was working in Malaysia and wouldn't return for three years. Despite the distance, the family's strong bonds were evident in how they supported each other.
@@ -221,39 +175,27 @@ export default function Home() {
           Communication flowed surprisingly well – my Hindi helped bridge the gap with Nepali, allowing me to translate for my teammate Dean. I learned about the Nepali calendar (Bikram Samvat), discovering that our 2025 was their 2081.
         </p>
 
-        <div className="relative w-full h-auto my-8">
-          <Image
-            src="/content/assets/images/farm-visit.gif"
-            alt="Farm visit with host family"
-            width={1200}
-            height={675}
-            unoptimized
-            className="rounded-lg w-[50%] mx-auto"
+        <BlogImage
+          src="/content/assets/images/farm-visit.gif"
+          alt="Farm visit with host family"
+          caption="Walking through the sugarcane and potato fields with our host father"
+          className="w-[50%] mx-auto"
+          unoptimized
+        />
+
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <BlogImage
+            src="/content/assets/images/neighbors-1.jpg"
+            alt="Meeting the neighbors"
+            fill
+          />
+          <BlogImage
+            src="/content/assets/images/neighbors-2.jpg"
+            alt="Connecting with villagers"
+            fill
           />
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          Walking through the sugarcane and potato fields with our host father
-        </p>
-
-        <div className="grid grid-cols-2 gap-4 my-8">
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/neighbors-1.jpg"
-              alt="Meeting the neighbors"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/neighbors-2.jpg"
-              alt="Connecting with villagers"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           Connecting with the village community
         </p>
 
@@ -265,142 +207,97 @@ export default function Home() {
           As the sun set, we gathered for our first dinner with the family. The aroma of freshly cooked daal bhat filled the house as we sat cross-legged on the floor. Mr. Tharu's daughter-in-law had prepared a feast - steaming rice, yellow lentil soup, and local vegetable curry. We were surprised to learn that the family only ate two meals a day, which explained the generous portions they served us. The food was incredibly delicious, but we had to politely ask them to reduce our portions - their usual servings were almost twice what we could eat! Prince showed me how to mix everything together with my hands, the traditional way of eating. The simple meal tasted extraordinary, made special by the family's hospitality and the stories we shared despite our language differences.
         </p>
 
-        <div className="relative aspect-video my-8">
-          <Image
-            src="/content/assets/images/daal-bhat.jpg"
-            alt="Traditional dinner"
-            fill
-            className="object-cover rounded-lg"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          Our first dinner of daal bhat with the host family
-        </p>
+        <BlogImage
+          src="/content/assets/images/daal-bhat.jpg"
+          alt="Traditional dinner"
+          caption="Our first dinner of daal bhat with the host family"
+          fill
+        />
 
         <p>
           The evening ended with an impromptu astronomy lesson, as I showed local children how to use a star map app on my phone. Among them was Sagar, a remarkably bright 10th grader whose English skills and intellectual curiosity would continue to impress me throughout our stay.
         </p>
 
-        <div className="relative aspect-video my-8">
-          <Image
-            src="/content/assets/images/star-gazing.jpg"
-            alt="Star gazing with children"
-            fill
-            className="object-cover rounded-lg"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          Sharing the wonders of the night sky with village children
-        </p>
+        <BlogImage
+          src="/content/assets/images/star-gazing.jpg"
+          alt="Star gazing with children"
+          caption="Sharing the wonders of the night sky with village children"
+          fill
+        />
 
-        <div className="relative aspect-video my-8">
-          <Image
-            src="/content/assets/images/mosquito-nets.jpg"
-            alt="Our sleeping arrangement"
-            fill
-            className="object-cover rounded-lg"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          Setting up our beds with mosquito nets in our host home
-        </p>
+        <BlogImage
+          src="/content/assets/images/mosquito-nets.jpg"
+          alt="Our sleeping arrangement"
+          caption="Setting up our beds with mosquito nets in our host home"
+          fill
+        />
 
         <h2>Day 4: Breaking Ground and Breaking Barriers</h2>
         <p>
           We woke up at 6 AM sharp for yoga with the BuildOn teacher. Even though it was cold and dark, the exercises warmed us up and got us ready for the day. After breakfast at the main office, we went to the construction site, excited to start the work we came here to do.
         </p>
 
-        <div className="relative aspect-video my-8">
-          <Image
-            src="/content/assets/images/yoga-1.jpg"
-            alt="Morning yoga practice"
-            fill
-            className="object-cover rounded-lg"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          Starting our day with yoga under the guidance of BuildOn's guruji
-        </p>
+        <BlogImage
+          src="/content/assets/images/yoga-1.jpg"
+          alt="Morning yoga practice"
+          caption="Starting our day with yoga under the guidance of BuildOn's guruji"
+          fill
+        />
 
         <p>
           We started our first construction day with BuildOn's energetic morning cheer, our voices echoing through the village as we prepared to break ground on the 419th school in Nepal.
         </p>
 
-        <div className="relative w-full h-auto my-8">
-          <Image
-            src="/content/assets/images/buildon-cheer-day-1.gif"
-            alt="BuildOn morning cheer"
-            width={1200}
-            height={675}
-            unoptimized
-            className="rounded-lg w-[50%] mx-auto"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          Starting our first day with the BuildOn cheer
-        </p>
+        <BlogImage
+          src="/content/assets/images/buildon-cheer-day-1.gif"
+          alt="BuildOn morning cheer"
+          caption="Starting our first day with the BuildOn cheer"
+          className="w-[50%] mx-auto"
+          unoptimized
+        />
 
         <p>
           We split into 3 teams. Team One took on the challenging task of digging the foundation trenches. Armed with shovels and pickaxes, we worked in pairs, taking turns to break the hard ground and clear the earth. The physical demands of the work brought us closer together, as we encouraged each other through each scoop of soil.
         </p>
 
-        <div className="grid grid-cols-2 gap-4 my-8">
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/digging-1.gif"
-              alt="Team digging trenches"
-              fill
-              unoptimized
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/digging-2.gif"
-              alt="Working with pickaxes"
-              fill
-              unoptimized
-              className="object-cover rounded-lg"
-            />
-          </div>
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          Team One working together to dig the foundation trenches
-        </p>
-
-        <div className="relative w-full h-auto my-8">
-          <Image
-            src="/content/assets/images/digging-parth-1.jpg"
-            alt="Personal contribution to the foundation work"
-            width={1200}
-            height={675}
-            className="rounded-lg w-full"
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <BlogImage
+            src="/content/assets/images/digging-1.gif"
+            alt="Team digging trenches"
+            fill
+            unoptimized
+          />
+          <BlogImage
+            src="/content/assets/images/digging-2.gif"
+            alt="Working with pickaxes"
+            fill
+            unoptimized
           />
         </div>
         <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
-          Taking my turn with the pickaxe to break ground for the foundation
+          Team One working together to dig the foundation trenches
         </p>
 
-        <div className="space-y-8 my-8">
-          <div className="relative w-full h-auto">
-            <Image
-              src="/content/assets/images/digging-3.jpg"
-              alt="Foundation work"
-              width={1200}
-              height={675}
-              className="rounded-lg w-full"
-            />
-          </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/content/assets/images/digging-4.jpg"
-              alt="Trench digging"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
+        <BlogImage
+          src="/content/assets/images/digging-parth-1.jpg"
+          alt="Personal contribution to the foundation work"
+          caption="Taking my turn with the pickaxe to break ground for the foundation"
+          className="w-full"
+        />
+
+        <div className="space-y-8 mb-8">
+          <BlogImage
+            src="/content/assets/images/digging-3.jpg"
+            alt="Foundation work"
+            className="w-full"
+          />
+          <BlogImage
+            src="/content/assets/images/digging-4.jpg"
+            alt="Trench digging"
+            fill
+          />
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           Our team making steady progress on the foundation trenches
         </p>
 
@@ -408,67 +305,48 @@ export default function Home() {
           Team Two had the crucial job of sifting sand to ensure the right consistency for our concrete mix. Using large mesh screens, we carefully filtered out rocks and debris. The villagers taught us their technique of gentle shaking, showing us how to tell when the sand was just right by its texture.
         </p>
 
-        <div className="relative w-full h-auto my-8">
-          <Image
-            src="/content/assets/images/sand-sifting.jpg"
-            alt="Sand sifting process"
-            width={1200}
-            height={675}
-            className="rounded-lg w-full"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          Team Two learning the precise art of sand sifting from the villagers
-        </p>
+        <BlogImage
+          src="/content/assets/images/sand-sifting.jpg"
+          alt="Sand sifting process"
+          caption="Team Two learning the precise art of sand sifting from the villagers"
+          className="w-full"
+        />
 
         <p>
           Team Three focused on creating the rebar framework that would strengthen our foundation. We learned to bend and tie the steel bars into precise shapes, following the master builder's guidance. It was detailed work that required patience and precision, but knowing these metal bones would support the school for generations made every careful twist worthwhile.
         </p>
 
-        <div className="grid grid-cols-2 gap-4 my-8">
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/rebar-1.gif"
-              alt="Creating the rebar structure"
-              fill
-              unoptimized
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/rebar-2.gif"
-              alt="Assembling the steel framework"
-              width={1200}
-              height={675}
-              unoptimized
-              className="rounded-lg w-full"
-            />
-          </div>
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <BlogImage
+            src="/content/assets/images/rebar-1.gif"
+            alt="Creating the rebar structure"
+            fill
+            unoptimized
+          />
+          <BlogImage
+            src="/content/assets/images/rebar-2.gif"
+            alt="Assembling the steel framework"
+            className="w-full"
+            unoptimized
+          />
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           Team Three crafting the steel framework for the foundation
         </p>
 
-        <div className="grid grid-cols-2 gap-4 my-8">
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/rebar-3.jpg"
-              alt="Detailed rebar work"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/rebar-4.jpg"
-              alt="Final rebar assembly"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <BlogImage
+            src="/content/assets/images/rebar-3.jpg"
+            alt="Detailed rebar work"
+            fill
+          />
+          <BlogImage
+            src="/content/assets/images/rebar-4.jpg"
+            alt="Final rebar assembly"
+            fill
+          />
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           Precision and teamwork in creating the foundation's steel framework
         </p>
 
@@ -476,34 +354,25 @@ export default function Home() {
           Some teams formed human chains that snaked across the construction site, passing rocks and pans of sand from one person to another. This method not only made the work faster but brought everyone together - BuildOn team members, villagers, and even curious children who wanted to help. The chains became a living symbol of community spirit, with songs and laughter making the heavy loads feel lighter.
         </p>
 
-        <div className="space-y-8 my-8">
-          <div className="relative aspect-video">
-            <Image
-              src="/content/assets/images/human-chain.gif"
-              alt="Human chain passing materials"
-              fill
-              unoptimized
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/content/assets/images/human-chain-2.jpg"
-              alt="Community working together"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/content/assets/images/human-chain-3.jpg"
-              alt="Team spirit in action"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
+        <div className="space-y-8 mb-8">
+          <BlogImage
+            src="/content/assets/images/human-chain.gif"
+            alt="Human chain passing materials"
+            fill
+            unoptimized
+          />
+          <BlogImage
+            src="/content/assets/images/human-chain-2.jpg"
+            alt="Community working together"
+            fill
+          />
+          <BlogImage
+            src="/content/assets/images/human-chain-3.jpg"
+            alt="Team spirit in action"
+            fill
+          />
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           Village community and BuildOn team working together in a human chain to transport materials
         </p>
 
@@ -515,17 +384,12 @@ export default function Home() {
           The men's group taught me a lot. Most were farmers who wanted to build this school to give their children better chances in life. Growing up in India, I used to hear people joke about village life being "backward," but being here reminded me that my own grandfather came from a village just like this one.
         </p>
 
-        <div className="relative aspect-video my-8">
-          <Image
-            src="/content/assets/images/farmers-discussion.jpg"
-            alt="Farmers discussion group"
-            fill
-            className="object-cover rounded-lg"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          Deep conversations with the village farmers about their hopes and challenges
-        </p>
+        <BlogImage
+          src="/content/assets/images/farmers-discussion.jpg"
+          alt="Farmers discussion group"
+          caption="Deep conversations with the village farmers about their hopes and challenges"
+          fill
+        />
 
         <p>
           The farmers spoke candidly about their challenges: uncertainty about crop yields, concerns about profit margins, and feelings of being trapped. Together, we explored potential solutions like automation and collective farming, drawing parallels with corporate farming practices in the USA.
@@ -535,36 +399,27 @@ export default function Home() {
           The day ended with an impromptu football match with the village children – a beautiful reminder that play knows no language barriers. As we kicked the ball around under the setting sun, all differences melted away. It wasn't about Americans or Nepalis, BuildOn team or villagers – it was simply people connecting through sport.
         </p>
 
-        <div className="grid grid-cols-3 gap-4 my-8">
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/football-1.gif"
-              alt="Playing with children"
-              fill
-              unoptimized
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/football-2.gif"
-              alt="Football with villagers"
-              fill
-              unoptimized
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/football-3.gif"
-              alt="Evening game"
-              fill
-              unoptimized
-              className="object-cover rounded-lg"
-            />
-          </div>
+        <div className="grid grid-cols-3 gap-4 mb-8">
+          <BlogImage
+            src="/content/assets/images/football-1.gif"
+            alt="Playing with children"
+            fill
+            unoptimized
+          />
+          <BlogImage
+            src="/content/assets/images/football-2.gif"
+            alt="Football with villagers"
+            fill
+            unoptimized
+          />
+          <BlogImage
+            src="/content/assets/images/football-3.gif"
+            alt="Evening game"
+            fill
+            unoptimized
+          />
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           Breaking down barriers through the universal language of football
         </p>
 
@@ -588,18 +443,13 @@ export default function Home() {
           The BuildOn cheer felt stronger on our second day, with more villagers joining in as they learned the words and movements.
         </p>
 
-        <div className="relative aspect-video my-8">
-          <Image
-            src="/content/assets/images/buildon-cheer-day-2.gif"
-            alt="BuildOn team spirit"
-            fill
-            unoptimized
-            className="object-cover rounded-lg"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          Village children joining our morning cheer
-        </p>
+        <BlogImage
+          src="/content/assets/images/buildon-cheer-day-2.gif"
+          alt="BuildOn team spirit"
+          caption="Village children joining our morning cheer"
+          fill
+          unoptimized
+        />
 
         <p>
           More villagers joined our morning yoga on our second day of building. As we worked harder on the school site,
@@ -607,25 +457,19 @@ export default function Home() {
           with tools - they knew exactly how to use them.
         </p>
 
-        <div className="space-y-8 my-8">
-          <div className="relative aspect-video">
-            <Image
-              src="/content/assets/images/cement-mixing-1.jpg"
-              alt="Cement mixing technique"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/content/assets/images/cement-mixing-2.jpg"
-              alt="Cement mixing technique"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
+        <div className="space-y-8 mb-8">
+          <BlogImage
+            src="/content/assets/images/cement-mixing-1.jpg"
+            alt="Cement mixing technique"
+            fill
+          />
+          <BlogImage
+            src="/content/assets/images/cement-mixing-2.jpg"
+            alt="Cement mixing technique"
+            fill
+          />
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           Learning the traditional two-person cement mixing technique with ropes and shovels
         </p>
 
@@ -635,85 +479,54 @@ export default function Home() {
           I was fascinated by both the similarities and unique aspects of Nepali traditions.
         </p>
 
-        <div className="space-y-8 my-8">
-          <div className="relative w-full h-auto">
-            <Image
-              src="/content/assets/images/groom-1.jpg"
-              alt="Traditional wedding procession"
-              width={1200}
-              height={675}
-              className="rounded-lg w-[50%] mx-auto"
-            />
-          </div>
-          <p className="text-center text-sm text-muted-foreground italic">
-            Celebrating Morgan and Dave's wedding with traditional Nepali customs
-          </p>
-
-          <div className="relative aspect-video">
-            <Image
-              src="/content/assets/images/groom-2.jpg"
-              alt="Wedding ceremony"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <p className="text-center text-sm text-muted-foreground italic">
-            Our team embracing the beautiful Nepali wedding traditions
-          </p>
-
-          <div className="relative w-full h-auto">
-            <Image
-              src="/content/assets/images/groom-3.gif"
-              alt="Wedding celebrations"
-              width={1200}
-              height={675}
-              unoptimized
-              className="rounded-lg w-[50%] mx-auto"
-            />
-          </div>
-          <p className="text-center text-sm text-muted-foreground italic">
-            The Baraat proceeding from the groom's host family home to the BuilOn HQ where the Bride and Groom would get married
-          </p>
+        <div className="space-y-8 mb-8">
+          <BlogImage
+            src="/content/assets/images/groom-1.jpg"
+            alt="Traditional wedding procession"
+            caption="Celebrating Morgan and Dave's wedding with traditional Nepali customs"
+            className="w-[50%] mx-auto"
+          />
+          <BlogImage
+            src="/content/assets/images/groom-2.jpg"
+            alt="Wedding ceremony"
+            caption="Our team embracing the beautiful Nepali wedding traditions"
+            fill
+          />
+          <BlogImage
+            src="/content/assets/images/groom-3.gif"
+            alt="Wedding celebrations"
+            caption="The Baraat proceeding from the groom's host family home to the BuilOn HQ where the Bride and Groom would get married"
+            className="w-[50%] mx-auto"
+            unoptimized
+          />
         </div>
 
-        <div className="grid grid-cols-2 gap-4 my-8">
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/bride-and-groom.jpg"
-              alt="Traditional wedding rituals"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/bride-and-groom-1.jpg"
-              alt="Wedding celebrations"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <BlogImage
+            src="/content/assets/images/bride-and-groom.jpg"
+            alt="Traditional wedding rituals"
+            fill
+          />
+          <BlogImage
+            src="/content/assets/images/bride-and-groom-1.jpg"
+            alt="Wedding celebrations"
+            fill
+          />
         </div>
 
-        <div className="grid grid-cols-2 gap-4 my-8">
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/bride-and-groom-2.jpg"
-              alt="Cultural ceremony"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/bride-and-groom-3.jpg"
-              alt="Wedding festivities"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <BlogImage
+            src="/content/assets/images/bride-and-groom-2.jpg"
+            alt="Cultural ceremony"
+            fill
+          />
+          <BlogImage
+            src="/content/assets/images/bride-and-groom-3.jpg"
+            alt="Wedding festivities"
+            fill
+          />
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           Celebrating the union with traditional Nepali wedding customs
         </p>
 
@@ -724,35 +537,23 @@ export default function Home() {
           was filled with a mix of excitement and nostalgia, knowing this would be our final day of building.
         </p>
 
-        <div className="relative w-full h-auto my-8">
-          <Image
-            src="/content/assets/images/yoga-2.jpg"
-            alt="Sunrise yoga session"
-            width={1200}
-            height={675}
-            className="rounded-lg w-full"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
-          Our largest yoga session yet, with villagers joining in growing numbers
-        </p>
+        <BlogImage
+          src="/content/assets/images/yoga-2.jpg"
+          alt="Sunrise yoga session"
+          caption="Our largest yoga session yet, with villagers joining in growing numbers"
+          className="w-full"
+        />
 
         <p>
           Our final BuildOn cheer was the loudest yet, as the entire community gathered to celebrate our last day of construction.
         </p>
 
-        <div className="relative w-full h-auto my-8">
-          <Image
-            src="/content/assets/images/buildon-cheer-day-3.jpg"
-            alt="Final day BuildOn cheer"
-            width={1200}
-            height={675}
-            className="rounded-lg w-full"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
-          The whole community joining in for our final cheer
-        </p>
+        <BlogImage
+          src="/content/assets/images/buildon-cheer-day-3.jpg"
+          alt="Final day BuildOn cheer"
+          caption="The whole community joining in for our final cheer"
+          className="w-full"
+        />
 
         <p>
           What made this final day even more special was an unexpected surge of young energy. Sagar and his classmates,
@@ -761,34 +562,24 @@ export default function Home() {
           ripple effect throughout the community – these students weren't just building a school, they were building their own future.
         </p>
 
-        <div className="relative aspect-video my-8">
-          <Image
-            src="/content/assets/images/neighboring-school-kids.jpg"
-            alt="Students from neighboring schools joining the construction"
-            fill
-            className="object-cover rounded-lg"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          Students from nearby schools coming together to help build their community's future
-        </p>
+        <BlogImage
+          src="/content/assets/images/neighboring-school-kids.jpg"
+          alt="Students from neighboring schools joining the construction"
+          caption="Students from nearby schools coming together to help build their community's future"
+          fill
+        />
 
         <p>
           The work site buzzed with renewed energy. Looking at our progress from day one to now was nothing short of remarkable.
           The trenches we'd dug, the foundations we'd laid – each element a physical manifestation of our collective hope for the future.
         </p>
 
-        <div className="relative aspect-video my-8">
-          <Image
-            src="/content/assets/images/construction-progress.jpg"
-            alt="Construction progress"
-            fill
-            className="object-cover rounded-lg"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          The remarkable progress of our foundation work
-        </p>
+        <BlogImage
+          src="/content/assets/images/construction-progress.jpg"
+          alt="Construction progress"
+          caption="The remarkable progress of our foundation work"
+          fill
+        />
 
         <p>
           After lunch, we gathered for a creative exercise that brought out everyone's playful side – drawing as many
@@ -809,58 +600,40 @@ export default function Home() {
           rich cultural heritage.
         </p>
 
-        <div className="relative w-full h-auto my-8">
-          <Image
-            src="/content/assets/images/nepali-closing-dance.gif"
-            alt="Traditional Nepali dance"
-            width={1200}
-            height={675}
-            unoptimized
-            className="rounded-lg w-[50%] mx-auto"
+        <BlogImage
+          src="/content/assets/images/nepali-closing-dance.gif"
+          alt="Traditional Nepali dance"
+          caption="Village women performing traditional Nepali dances at the closing ceremony"
+          className="w-[50%] mx-auto"
+          unoptimized
+        />
+
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <BlogImage
+            src="/content/assets/images/team-cultural-1.jpg"
+            alt="Team in traditional attire"
+            fill
+          />
+          <BlogImage
+            src="/content/assets/images/team-cultural-2.jpg"
+            alt="Cultural celebration"
+            fill
+          />
+        </div>
+
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <BlogImage
+            src="/content/assets/images/team-cultural-3.jpg"
+            alt="Traditional dress ceremony"
+            fill
+          />
+          <BlogImage
+            src="/content/assets/images/team-cultural-4.jpg"
+            alt="Community gathering"
+            fill
           />
         </div>
         <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
-          Village women performing traditional Nepali dances at the closing ceremony
-        </p>
-
-        <div className="grid grid-cols-2 gap-4 my-8">
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/team-cultural-1.jpg"
-              alt="Team in traditional attire"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-square">
-        <Image
-              src="/content/assets/images/team-cultural-2.jpg"
-              alt="Cultural celebration"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-        </div>
-
-        <div className="grid grid-cols-2 gap-4 my-8">
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/team-cultural-3.jpg"
-              alt="Traditional dress ceremony"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/content/assets/images/team-cultural-4.jpg"
-              alt="Community gathering"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
           Our team dressed in traditional Nepali attire for the closing ceremony
         </p>
 
@@ -870,19 +643,13 @@ export default function Home() {
           with local grace.
         </p>
 
-        <div className="relative w-full h-auto my-8">
-          <Image
-            src="/content/assets/images/team-cultural-dance.gif"
-            alt="Cultural dance performance"
-            width={1200}
-            height={675}
-            unoptimized
-            className="rounded-lg w-full"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
-          Spontaneous dancing brought everyone together one last time
-        </p>
+        <BlogImage
+          src="/content/assets/images/team-cultural-dance.gif"
+          alt="Cultural dance performance"
+          caption="Spontaneous dancing brought everyone together one last time"
+          className="w-full"
+          unoptimized
+        />
 
         <p>
           The girls from our team had also prepared a special surprise – they learned a popular Nepali song and
@@ -897,18 +664,12 @@ export default function Home() {
           invaluable, capturing precious moments that we could share – one photo for them, one for us.
         </p>
 
-        <div className="relative w-full h-auto my-8">
-          <Image
-            src="/content/assets/images/polaroid-moment.jpg"
-            alt="Family portrait"
-            width={1200}
-            height={675}
-            className="rounded-lg w-full"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          Capturing memories with our host family through Morgan's Polaroid
-        </p>
+        <BlogImage
+          src="/content/assets/images/polaroid-moment.jpg"
+          alt="Family portrait"
+          caption="Capturing memories with our host family through Morgan's Polaroid"
+          className="w-full"
+        />
 
         <p>
           My final conversation with Sagar was particularly moving. His bright spirit and technological aptitude had
@@ -934,19 +695,13 @@ export default function Home() {
           range, a majestic farewell to our Nepali adventure.
         </p>
 
-        <div className="relative w-full h-auto my-8">
-          <Image
-            src="/content/assets/images/himalayas-plane.gif"
-            alt="Himalayan view"
-            width={1200}
-            height={675}
-            unoptimized
-            className="rounded-lg w-full"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
-          A farewell glimpse of the majestic Himalayas
-        </p>
+        <BlogImage
+          src="/content/assets/images/himalayas-plane.gif"
+          alt="Himalayan view"
+          caption="A farewell glimpse of the majestic Himalayas"
+          className="w-full"
+          unoptimized
+        />
 
         <h2>Reflections</h2>
         <p>
@@ -955,25 +710,19 @@ export default function Home() {
           change will change you too, in ways you didn't expect.
         </p>
 
-        <div className="space-y-8 my-8">
-          <div className="relative aspect-video">
-            <Image
-              src="/content/assets/images/before-construction.jpg"
-              alt="School site before construction"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/content/assets/images/after-construction.jpg"
-              alt="School site after construction"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
+        <div className="space-y-8 mb-8">
+          <BlogImage
+            src="/content/assets/images/before-construction.jpg"
+            alt="School site before construction"
+            fill
+          />
+          <BlogImage
+            src="/content/assets/images/after-construction.jpg"
+            alt="School site after construction"
+            fill
+          />
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           The transformation of the school site - from empty ground to the foundation of future dreams
         </p>
 
@@ -983,31 +732,22 @@ export default function Home() {
           I saw and learned here.
         </p>
 
-        <div className="space-y-8 my-8">
-          <div className="relative aspect-video">
-            <Image
-              src="/content/assets/images/team-final-1.jpg"
-              alt="Team final gathering"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/content/assets/images/team-final-2.jpg"
-              alt="Final day celebration"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/content/assets/images/team-final-3.jpg"
-              alt="BuildOn team photo"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
+        <div className="space-y-8 mb-8">
+          <BlogImage
+            src="/content/assets/images/team-final-1.jpg"
+            alt="Team final gathering"
+            fill
+          />
+          <BlogImage
+            src="/content/assets/images/team-final-2.jpg"
+            alt="Final day celebration"
+            fill
+          />
+          <BlogImage
+            src="/content/assets/images/team-final-3.jpg"
+            alt="BuildOn team photo"
+            fill
+          />
         </div>
       </article>
     </div>

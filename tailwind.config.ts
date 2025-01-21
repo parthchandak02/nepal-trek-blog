@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
     darkMode: ["class"],
     content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -78,6 +78,41 @@ export default {
   					},
   				},
   			},
+  		},
+  		components: {
+  			'.blog-image-full': {
+  				'@apply relative w-full h-auto my-8': {},
+  				'& img': {
+  					'@apply rounded-lg w-full': {},
+  				},
+  				'& .caption': {
+  					'@apply text-center text-sm text-muted-foreground italic mt-2 mb-12': {},
+  				},
+  			},
+  			'.blog-image-half': {
+  				'@apply relative w-full h-auto my-8': {},
+  				'& img': {
+  					'@apply rounded-lg w-[50%] mx-auto': {},
+  				},
+  				'& .caption': {
+  					'@apply text-center text-sm text-muted-foreground italic mt-2 mb-12': {},
+  				},
+  			},
+  			'.blog-image-grid': {
+  				'@apply grid gap-4 my-8': {},
+  				'& .grid-item': {
+  					'@apply relative': {},
+  					'& > div': {
+  						'@apply relative aspect-square w-full': {},
+  						'& img': {
+  							'@apply object-cover rounded-lg': {},
+  						},
+  					},
+  				},
+  				'& .caption': {
+  					'@apply text-center text-sm text-muted-foreground italic mt-2 mb-12': {},
+  				},
+  			},
   		}
   	}
   },
@@ -86,3 +121,5 @@ export default {
     require("@tailwindcss/typography"),
   ],
 } satisfies Config;
+
+export default config;

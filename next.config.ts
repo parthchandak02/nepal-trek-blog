@@ -1,12 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/nepal-trek-blog',
+  ...(process.env.NODE_ENV === 'production' ? {
+    basePath: '/nepal-trek-blog',
+  } : {}),
   images: {
     unoptimized: true,
-    path: '/nepal-trek-blog',
-    loader: 'custom',
-    loaderFile: './src/lib/image-loader.ts'
+    ...(process.env.NODE_ENV === 'production' ? {
+      path: '/nepal-trek-blog',
+      loader: 'custom',
+      loaderFile: './src/lib/image-loader.ts'
+    } : {})
   },
 }
 
