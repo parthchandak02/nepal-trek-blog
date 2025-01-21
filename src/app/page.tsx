@@ -16,6 +16,22 @@ export default function Home() {
         </p>
       </section>
 
+      {/* Introduction */}
+      <section className="mb-12">
+        <div className="relative w-full h-auto">
+          <Image
+            src="/content/assets/images/parth-intro-1.jpg"
+            alt="Author with BuildOn team in Nepal"
+            width={1200}
+            height={675}
+            className="rounded-lg w-[50%] mx-auto"
+          />
+        </div>
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
+          Embarking on a journey to build hope, one brick at a time
+        </p>
+      </section>
+
       {/* Blog Content */}
       <article className="prose prose-xl max-w-none
         prose-headings:font-bold
@@ -30,6 +46,19 @@ export default function Home() {
           When our plane landed in Kathmandu, I felt at home in the familiar busy city life that reminded me of Mumbai.
           Our Trek Leader Santosh Mahato met us at the airport and took us to our hotel. He made sure we had everything
           we needed, including hot water. We knew we were in good hands.
+        </p>
+
+        <div className="relative w-full h-auto my-8">
+          <Image
+            src="/content/assets/images/plane-landing-nepal.png"
+            alt="Landing in Kathmandu"
+            width={1200}
+            height={675}
+            className="rounded-lg w-full"
+          />
+        </div>
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
+          First glimpse of Nepal as our plane descended into Kathmandu
         </p>
 
         <h2>Day 2: First Steps in Nepal</h2>
@@ -59,8 +88,8 @@ export default function Home() {
             />
           </div>
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          The warmth of our welcome from the school children
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
+          School children sharing their culture through dance and song
         </p>
 
         <p>
@@ -78,16 +107,17 @@ export default function Home() {
           education but also cultural pride and creativity.
         </p>
 
-        <div className="relative aspect-video my-8">
+        <div className="relative w-full h-auto my-8">
           <Image
             src="/content/assets/images/children-performance.gif"
             alt="Children performing traditional dances"
-            fill
+            width={1200}
+            height={675}
             unoptimized
-            className="object-cover rounded-lg"
+            className="rounded-lg w-[50%] mx-auto"
           />
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           School children sharing their culture through dance and song
         </p>
 
@@ -130,7 +160,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           The community coming together to welcome us with traditional dances
         </p>
 
@@ -170,6 +200,19 @@ export default function Home() {
           Beginning our journey with traditional blessings and groundbreaking
         </p>
 
+        <div className="relative w-full h-auto my-8">
+          <Image
+            src="/content/assets/images/host-father-1.jpg"
+            alt="Meeting my host father"
+            width={1200}
+            height={675}
+            className="rounded-lg w-full"
+          />
+        </div>
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
+          First moments with my host father, Mr. Tulasiram Tharu
+        </p>
+
         <p>
           Mr. Tharu's hospitality began immediately as he loaded our bags onto his bicycle. At his home, I met his warm family - his daughter-in-law who managed the household with grace, and his cheerful grandson Prince who quickly became my little friend. During our walk to his farms, Mr. Tharu shared that his son was working in Malaysia and wouldn't return for three years. Despite the distance, the family's strong bonds were evident in how they supported each other.
         </p>
@@ -185,7 +228,7 @@ export default function Home() {
             width={1200}
             height={675}
             unoptimized
-            className="rounded-lg w-full"
+            className="rounded-lg w-[50%] mx-auto"
           />
         </div>
         <p className="text-center text-sm text-muted-foreground italic">
@@ -290,7 +333,7 @@ export default function Home() {
             width={1200}
             height={675}
             unoptimized
-            className="rounded-lg w-full"
+            className="rounded-lg w-[50%] mx-auto"
           />
         </div>
         <p className="text-center text-sm text-muted-foreground italic">
@@ -323,6 +366,19 @@ export default function Home() {
         </div>
         <p className="text-center text-sm text-muted-foreground italic">
           Team One working together to dig the foundation trenches
+        </p>
+
+        <div className="relative w-full h-auto my-8">
+          <Image
+            src="/content/assets/images/digging-parth-1.jpg"
+            alt="Personal contribution to the foundation work"
+            width={1200}
+            height={675}
+            className="rounded-lg w-full"
+          />
+        </div>
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
+          Taking my turn with the pickaxe to break ground for the foundation
         </p>
 
         <div className="space-y-8 my-8">
@@ -392,6 +448,28 @@ export default function Home() {
         </div>
         <p className="text-center text-sm text-muted-foreground italic">
           Team Three crafting the steel framework for the foundation
+        </p>
+
+        <div className="grid grid-cols-2 gap-4 my-8">
+          <div className="relative aspect-square">
+            <Image
+              src="/content/assets/images/rebar-3.jpg"
+              alt="Detailed rebar work"
+              fill
+              className="object-cover rounded-lg"
+            />
+          </div>
+          <div className="relative aspect-square">
+            <Image
+              src="/content/assets/images/rebar-4.jpg"
+              alt="Final rebar assembly"
+              fill
+              className="object-cover rounded-lg"
+            />
+          </div>
+        </div>
+        <p className="text-center text-sm text-muted-foreground italic">
+          Precision and teamwork in creating the foundation's steel framework
         </p>
 
         <p>
@@ -564,7 +642,7 @@ export default function Home() {
               alt="Traditional wedding procession"
               width={1200}
               height={675}
-              className="rounded-lg w-full"
+              className="rounded-lg w-[50%] mx-auto"
             />
           </div>
           <p className="text-center text-sm text-muted-foreground italic">
@@ -590,7 +668,7 @@ export default function Home() {
               width={1200}
               height={675}
               unoptimized
-              className="rounded-lg w-full"
+              className="rounded-lg w-[50%] mx-auto"
             />
           </div>
           <p className="text-center text-sm text-muted-foreground italic">
@@ -641,38 +719,39 @@ export default function Home() {
 
         <h2>Day 6: Final Touches and Fond Farewells</h2>
         <p>
-          Our final BuildOn cheer was the loudest yet, as the entire community gathered to celebrate our last day of construction.
-        </p>
-
-        <div className="relative aspect-video my-8">
-          <Image
-            src="/content/assets/images/buildon-cheer-day-3.gif"
-            alt="Final day BuildOn cheer"
-            fill
-            unoptimized
-            className="object-cover rounded-lg"
-          />
-        </div>
-        <p className="text-center text-sm text-muted-foreground italic">
-          The whole community joining in for our final cheer
-        </p>
-
-        <p>
           Our last morning of construction began with what had become a cherished ritual – yoga at dawn. The number of
           villagers joining us had grown each day, a beautiful testament to the bonds we'd formed. The crisp morning air
           was filled with a mix of excitement and nostalgia, knowing this would be our final day of building.
         </p>
 
-        <div className="relative aspect-video my-8">
+        <div className="relative w-full h-auto my-8">
           <Image
             src="/content/assets/images/yoga-2.jpg"
             alt="Sunrise yoga session"
-            fill
-            className="object-cover rounded-lg"
+            width={1200}
+            height={675}
+            className="rounded-lg w-full"
           />
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           Our largest yoga session yet, with villagers joining in growing numbers
+        </p>
+
+        <p>
+          Our final BuildOn cheer was the loudest yet, as the entire community gathered to celebrate our last day of construction.
+        </p>
+
+        <div className="relative w-full h-auto my-8">
+          <Image
+            src="/content/assets/images/buildon-cheer-day-3.jpg"
+            alt="Final day BuildOn cheer"
+            width={1200}
+            height={675}
+            className="rounded-lg w-full"
+          />
+        </div>
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
+          The whole community joining in for our final cheer
         </p>
 
         <p>
@@ -737,10 +816,10 @@ export default function Home() {
             width={1200}
             height={675}
             unoptimized
-            className="rounded-lg w-full"
+            className="rounded-lg w-[50%] mx-auto"
           />
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           Village women performing traditional Nepali dances at the closing ceremony
         </p>
 
@@ -754,7 +833,7 @@ export default function Home() {
             />
           </div>
           <div className="relative aspect-square">
-            <Image
+        <Image
               src="/content/assets/images/team-cultural-2.jpg"
               alt="Cultural celebration"
               fill
@@ -791,16 +870,17 @@ export default function Home() {
           with local grace.
         </p>
 
-        <div className="relative aspect-video my-8">
+        <div className="relative w-full h-auto my-8">
           <Image
             src="/content/assets/images/team-cultural-dance.gif"
             alt="Cultural dance performance"
-            fill
+            width={1200}
+            height={675}
             unoptimized
-            className="object-cover rounded-lg"
+            className="rounded-lg w-full"
           />
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           Spontaneous dancing brought everyone together one last time
         </p>
 
@@ -854,16 +934,17 @@ export default function Home() {
           range, a majestic farewell to our Nepali adventure.
         </p>
 
-        <div className="relative aspect-video my-8">
+        <div className="relative w-full h-auto my-8">
           <Image
             src="/content/assets/images/himalayas-plane.gif"
             alt="Himalayan view"
-            fill
+            width={1200}
+            height={675}
             unoptimized
-            className="object-cover rounded-lg"
+            className="rounded-lg w-full"
           />
         </div>
-        <p className="text-center text-sm text-muted-foreground italic">
+        <p className="text-center text-sm text-muted-foreground italic mt-2 mb-12">
           A farewell glimpse of the majestic Himalayas
         </p>
 

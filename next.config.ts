@@ -1,7 +1,14 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  // Only enable these for production build
+  ...(process.env.NODE_ENV === 'production' ? {
+    output: 'export',  // Enable static exports
+    basePath: '/nepal-trek-blog', // Your repo name
+  } : {}),
+  images: {
+    unoptimized: true, // Required for static export
+  },
+}
 
-export default nextConfig;
+export default nextConfig
